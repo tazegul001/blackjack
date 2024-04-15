@@ -1,0 +1,18 @@
+@startuml
+class Player {
+  - Name
+  - Hand
+  - Bet
+}
+class Dealer {
+  - Hand
+}
+class Card {
+  - Value
+  - Suit
+}
+
+Player *-- Hand
+Dealer *-- Hand
+Player "1" o-- "n" Bet
+@enduml
